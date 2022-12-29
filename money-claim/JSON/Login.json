@@ -3,6 +3,10 @@
     "hindi": "लॉग इन करें",
     "english": "Login Form"
   },
+  "activeuser": {
+    "hindi": "लोग अब तक जुड़े",
+    "english": "Active Users"
+  },
   "loginForm": {
     "email": {
       "hindi": "ईमेल आईडी",

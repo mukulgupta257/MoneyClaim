@@ -1,0 +1,26 @@
+{
+  "name": {
+    "hindi": "",
+    "english": ""
+  },
+  "email": {
+    "hindi": "",
+    "english": ""
+  },
+  "password": {
+    "hindi": "",
+    "english": ""
+  },
+  "confirmPassword": {
+    "hindi": "",
+    "english": ""
+  },
+  "Phonenumber": {
+    "hindi": "",
+    "english": ""
+  },
+  "refferalCode": {
+    "hindi": "",
+    "english": ""
+  }
+}

@@ -34,9 +34,6 @@ const Home = () => {
             </span>
           </Link>
         </div>
-        <div className="ActiveUsers">
-          -- {Data.activeuser[`${data === 0 ? "english" : "hindi"}`]}
-        </div>
       </Layout>
     </main>
   );
