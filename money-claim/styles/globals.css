@@ -6,9 +6,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Itim", cursive;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 a {
