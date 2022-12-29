@@ -25,6 +25,7 @@ export default function LoginForm({ formlabels, onSubmit, onFailed }) {
       onFinish={onFinish}
       onFinishFailed={onFinishFailed}
       autoComplete="off"
+      className="LoginForm"
     >
       <Form.Item
         label={formlabels.email}
@@ -52,23 +53,7 @@ export default function LoginForm({ formlabels, onSubmit, onFailed }) {
         <Input.Password />
       </Form.Item>
 
-      <Form.Item
-        name="remember"
-        valuePropName="checked"
-        wrapperCol={{
-          offset: 8,
-          span: 16,
-        }}
-      >
-        <Checkbox>Remember me</Checkbox>
-      </Form.Item>
-
-      <Form.Item
-        wrapperCol={{
-          offset: 8,
-          span: 16,
-        }}
-      >
+      <Form.Item>
         <Button type="primary" htmlType="submit">
           Submit
         </Button>

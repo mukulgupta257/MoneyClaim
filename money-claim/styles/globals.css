@@ -63,3 +63,6 @@ a {
   cursor: pointer;
   margin-right: 5px;
 }
+.LoginForm {
+  max-width: 375px;
+}
