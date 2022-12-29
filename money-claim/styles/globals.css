@@ -18,6 +18,9 @@ a {
   padding: 0px;
   margin: 0px;
 }
+.ant-col {
+  max-width: 100%;
+}
 .root {
   min-width: 100vw;
   min-height: 100vh;
@@ -74,11 +77,6 @@ a {
   width: 100%;
   margin-bottom: 10px;
 }
-.LoginFieldFormItem .ant-form-item-label .ant-form-item-required {
-  font: normal normal 16px/16px "Itim";
-  flex-direction: row-reverse;
-  gap: 3px;
-}
 .LoginFieldFormItem input {
   height: 40px;
 }
@@ -117,4 +115,12 @@ a {
   border-top: 1px solid #dddddd;
   padding: 8px 0px;
   text-align: center;
+}
+.LoginFieldForm .ant-form-item-label {
+  text-align: left;
+}
+.LoginFieldForm .ant-form-item-label label {
+  text-align: left;
+  font: normal normal 16px/16px "Itim";
+  flex-direction: row-reverse;
 }

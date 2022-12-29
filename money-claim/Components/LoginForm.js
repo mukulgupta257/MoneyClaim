@@ -29,6 +29,7 @@ export default function LoginForm({ formlabels }) {
       className="LoginFieldForm"
     >
       <Form.Item
+        colon={false}
         label={formlabels.email}
         name="username"
         rules={[
@@ -44,6 +45,7 @@ export default function LoginForm({ formlabels }) {
       </Form.Item>
 
       <Form.Item
+        colon={false}
         label={formlabels.password}
         name="password"
         rules={[

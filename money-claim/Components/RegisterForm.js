@@ -29,6 +29,7 @@ export default function RegisterFrom({ formlabels }) {
       className="LoginFieldForm"
     >
       <Form.Item
+        colon={false}
         label={formlabels.name}
         name="name"
         rules={[
@@ -42,6 +43,7 @@ export default function RegisterFrom({ formlabels }) {
         <Input />
       </Form.Item>
       <Form.Item
+        colon={false}
         label={formlabels.email}
         name="username"
         rules={[
@@ -56,6 +58,7 @@ export default function RegisterFrom({ formlabels }) {
         <Input />
       </Form.Item>
       <Form.Item
+        colon={false}
         label={formlabels.Phonenumber}
         name="contactnumber"
         rules={[
@@ -69,6 +72,7 @@ export default function RegisterFrom({ formlabels }) {
         <Input />
       </Form.Item>
       <Form.Item
+        colon={false}
         label={formlabels.refferalCode}
         name="refferCode"
         rules={[
@@ -82,6 +86,7 @@ export default function RegisterFrom({ formlabels }) {
       </Form.Item>
 
       <Form.Item
+        colon={false}
         label={formlabels.password}
         name="password"
         rules={[
@@ -95,6 +100,7 @@ export default function RegisterFrom({ formlabels }) {
         <Input.Password />
       </Form.Item>
       <Form.Item
+        colon={false}
         label={formlabels.confirmPassword}
         name="confirmpassword"
         rules={[
