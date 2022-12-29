@@ -1,5 +1,6 @@
 import { Form } from "antd";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 import Layout from "../Components/Layout";
 import LoginForm from "../Components/LoginForm";
@@ -7,6 +8,7 @@ import Data from "../JSON/Login.json";
 
 const Home = () => {
   const [data, setData] = useState(0);
+  const router = useRouter();
   const labels = {
     email: Data.loginForm.email[`${data === 0 ? "english" : "hindi"}`],
     password: Data.loginForm.password[`${data === 0 ? "english" : "hindi"}`],
@@ -28,11 +30,12 @@ const Home = () => {
           </div>
           <LoginForm formlabels={labels} />
           <span className="divider">-----------OR-----------</span>
-          <Link href="/register">
-            <span className="CreateAccount">
-              {Data.createAccount[`${data === 0 ? "english" : "hindi"}`]}
-            </span>
-          </Link>
+          <span
+            className="CreateAccount"
+            onClick={() => router.push("/register")}
+          >
+            {Data.createAccount[`${data === 0 ? "english" : "hindi"}`]}
+          </span>
         </div>
         <div className="ActiveUsers">
           -- {Data.activeuser[`${data === 0 ? "english" : "hindi"}`]}

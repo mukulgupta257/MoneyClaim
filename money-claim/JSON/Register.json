@@ -1,26 +1,34 @@
 {
+  "Pagetitle": {
+    "hindi": "",
+    "english": "Create An Account"
+  },
   "name": {
     "hindi": "",
-    "english": ""
+    "english": "Full Name"
   },
   "email": {
     "hindi": "",
-    "english": ""
+    "english": "Email Id / Username"
   },
   "password": {
     "hindi": "",
-    "english": ""
+    "english": "Password"
   },
   "confirmPassword": {
     "hindi": "",
-    "english": ""
+    "english": "Confirm Password"
   },
   "Phonenumber": {
     "hindi": "",
-    "english": ""
+    "english": "Phone Number"
   },
   "refferalCode": {
     "hindi": "",
-    "english": ""
+    "english": "Refferal Code (optional)"
+  },
+  "Login": {
+    "hindi": "",
+    "english": "Already Have an Account? Login."
   }
 }
