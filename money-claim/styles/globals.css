@@ -53,7 +53,7 @@ a {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding: 10px 0px;
+  padding: 10px 10px;
 }
 .LanguageButton {
   width: 130px;
@@ -65,7 +65,6 @@ a {
   box-shadow: 0px 10px 8px -8px #000;
   border-radius: 10px;
   cursor: pointer;
-  margin-right: 5px;
 }
 .LoginFieldForm {
   max-width: 370px;
@@ -105,4 +104,7 @@ a {
   width: 100%;
   display: block;
   text-align: center;
+}
+.CreateAccount:hover {
+  text-decoration: underline;
 }
