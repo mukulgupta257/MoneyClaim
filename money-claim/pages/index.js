@@ -1,21 +1,33 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import { Form } from "antd";
+import React, { useState } from "react";
+import Layout from "../Components/Layout";
+import LoginForm from "../Components/LoginForm";
+import Data from "../JSON/Login.json";
 
-export default function Home() {
+const Home = () => {
+  const [data, setData] = useState(0);
+  const handleClick = () => {
+    setData(data === 0 ? 1 : 0);
+  };
+  const labels = {
+    email: Data.loginForm.email[`${data === 0 ? "english" : "hindi"}`],
+    password: Data.loginForm.password[`${data === 0 ? "english" : "hindi"}`],
+  };
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Money Claim</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to Money Claim</h1>
-
-        <p className={styles.description}>
-          Your Project is in Development State{" "}
-        </p>
-      </main>
-    </div>
+    <main>
+      <Layout>
+        <div className="LoginBtnContainer">
+          <button onClick={handleClick} className={"LanguageButton"}>
+            Change Language / भाषा बदलें
+          </button>
+        </div>
+        <div className="LoginForm">
+          {Data.Logintitle[`${data === 0 ? "english" : "hindi"}`]}
+        </div>
+        <LoginForm formlabels={labels} />
+      </Layout>
+    </main>
   );
-}
+};
+
+export default Home;

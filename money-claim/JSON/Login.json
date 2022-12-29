@@ -1,0 +1,16 @@
+{
+  "Logintitle": {
+    "hindi": "लॉग इन करें",
+    "english": "Login Form"
+  },
+  "loginForm": {
+    "email": {
+      "hindi": "ईमेल आईडी",
+      "english": "Email Id / Username"
+    },
+    "password": {
+      "hindi": "पासवर्ड",
+      "english": "Password"
+    }
+  }
+}

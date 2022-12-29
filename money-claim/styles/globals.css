@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import "antd/dist/reset.css";
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Itim", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
@@ -13,14 +18,48 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.root {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+.Header {
+  display: flex;
+  max-width: 375px;
+  max-height: 94px;
+  justify-content: space-between;
+}
+.HeaderText {
+  padding: 0px 3px;
+  display: flex;
+  color: #dddddd;
+  align-items: center;
+  font: normal normal 32px/32px "Itim";
+  background-color: #de0000;
+  width: 70%;
+}
+.LoginForm {
+  font: normal normal 22px/22px "Itim";
+  padding-top: 15px;
+  padding-left: 5px;
+}
+.LoginBtnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0px;
+}
+.LanguageButton {
+  width: 130px;
+  line-height: 20px;
+  font-size: 14px;
+  height: 45px;
+  background: transparent;
+  border: 0.2px solid #c7c7c7a2;
+  box-shadow: 0px 10px 8px -8px #000;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 5px;
 }
