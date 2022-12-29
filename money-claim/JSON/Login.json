@@ -12,5 +12,9 @@
       "hindi": "पासवर्ड",
       "english": "Password"
     }
+  },
+  "createAccount": {
+    "hindi": "हमारे साथ अकाउंट बनाएं",
+    "english": "Create Account With us"
   }
 }

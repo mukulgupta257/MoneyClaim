@@ -1,4 +1,5 @@
 import { Form } from "antd";
+import Link from "next/link";
 import React, { useState } from "react";
 import Layout from "../Components/Layout";
 import LoginForm from "../Components/LoginForm";
@@ -26,6 +27,12 @@ const Home = () => {
             {Data.Logintitle[`${data === 0 ? "english" : "hindi"}`]}
           </div>
           <LoginForm formlabels={labels} />
+          <span className="divider">-----------OR-----------</span>
+          <Link href="/register">
+            <span className="CreateAccount">
+              {Data.createAccount[`${data === 0 ? "english" : "hindi"}`]}
+            </span>
+          </Link>
         </div>
       </Layout>
     </main>
