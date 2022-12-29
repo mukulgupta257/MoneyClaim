@@ -4,10 +4,8 @@ import { Button, Checkbox, Form, Input } from "antd";
 export default function LoginForm({ formlabels, onSubmit, onFailed }) {
   const onFinish = (values) => {
     console.log("Success:", values);
-    onSubmit();
   };
   const onFinishFailed = (errorInfo) => {
-    onFailed();
     console.log("Failed:", errorInfo);
   };
   return (
@@ -25,7 +23,7 @@ export default function LoginForm({ formlabels, onSubmit, onFailed }) {
       onFinish={onFinish}
       onFinishFailed={onFinishFailed}
       autoComplete="off"
-      className="LoginForm"
+      className="LoginFieldForm"
     >
       <Form.Item
         label={formlabels.email}
@@ -33,9 +31,11 @@ export default function LoginForm({ formlabels, onSubmit, onFailed }) {
         rules={[
           {
             required: true,
-            message: "Please input your username!",
+            type: "email",
+            message: "Please Enter your Email!",
           },
         ]}
+        className="LoginFieldFormItem"
       >
         <Input />
       </Form.Item>
@@ -49,13 +49,14 @@ export default function LoginForm({ formlabels, onSubmit, onFailed }) {
             message: "Please input your password!",
           },
         ]}
+        className="LoginFieldFormItem"
       >
         <Input.Password />
       </Form.Item>
 
-      <Form.Item>
+      <Form.Item className="LoginFieldFormItem">
         <Button type="primary" htmlType="submit">
-          Submit
+          Login
         </Button>
       </Form.Item>
     </Form>

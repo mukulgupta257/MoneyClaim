@@ -41,9 +41,10 @@ a {
   width: 70%;
 }
 .LoginForm {
-  font: normal normal 22px/22px "Itim";
+  font: normal normal 28px/22px "Itim";
   padding-top: 15px;
   padding-left: 5px;
+  margin-bottom: 20px;
 }
 .LoginBtnContainer {
   width: 100%;
@@ -63,6 +64,23 @@ a {
   cursor: pointer;
   margin-right: 5px;
 }
-.LoginForm {
-  max-width: 375px;
+.LoginFieldForm {
+  max-width: 370px;
+  padding: 0px 5px;
+}
+.LoginFieldFormItem {
+  width: 90%;
+  margin-bottom: 10px;
+}
+.LoginFieldFormItem .ant-form-item-label .ant-form-item-required {
+  font: normal normal 16px/16px "Itim";
+  flex-direction: row-reverse;
+  gap: 3px;
+}
+.LoginFieldFormItem input {
+  height: 40px;
+}
+.LoginFieldFormItem .ant-btn {
+  width: 100%;
+  margin-top: 10px;
 }

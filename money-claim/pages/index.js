@@ -6,12 +6,12 @@ import Data from "../JSON/Login.json";
 
 const Home = () => {
   const [data, setData] = useState(0);
-  const handleClick = () => {
-    setData(data === 0 ? 1 : 0);
-  };
   const labels = {
     email: Data.loginForm.email[`${data === 0 ? "english" : "hindi"}`],
     password: Data.loginForm.password[`${data === 0 ? "english" : "hindi"}`],
+  };
+  const handleClick = () => {
+    setData(data === 0 ? 1 : 0);
   };
   return (
     <main>
