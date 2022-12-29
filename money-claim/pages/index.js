@@ -21,10 +21,12 @@ const Home = () => {
             Change Language / भाषा बदलें
           </button>
         </div>
-        <div className="LoginForm">
-          {Data.Logintitle[`${data === 0 ? "english" : "hindi"}`]}
+        <div className="FormContainer">
+          <div className="LoginForm">
+            {Data.Logintitle[`${data === 0 ? "english" : "hindi"}`]}
+          </div>
+          <LoginForm formlabels={labels} />
         </div>
-        <LoginForm formlabels={labels} />
       </Layout>
     </main>
   );
