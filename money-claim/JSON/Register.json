@@ -1,34 +1,34 @@
 {
   "Pagetitle": {
-    "hindi": "",
+    "hindi": "खाता बनाएं",
     "english": "Create An Account"
   },
   "name": {
-    "hindi": "",
+    "hindi": "पूरा नाम",
     "english": "Full Name"
   },
   "email": {
-    "hindi": "",
+    "hindi": "ईमेल आईडी / यूजरनेम",
     "english": "Email Id / Username"
   },
   "password": {
-    "hindi": "",
+    "hindi": "पासवर्ड",
     "english": "Password"
   },
   "confirmPassword": {
-    "hindi": "",
+    "hindi": "Confirm Password",
     "english": "Confirm Password"
   },
   "Phonenumber": {
-    "hindi": "",
+    "hindi": "फ़ोन नंबर",
     "english": "Phone Number"
   },
   "refferalCode": {
-    "hindi": "",
+    "hindi": "रेफरल कोड (वैकल्पिक)",
     "english": "Refferal Code (optional)"
   },
   "Login": {
-    "hindi": "",
+    "hindi": "पहले से एक खाता मौजूद है? लॉग इन करें",
     "english": "Already Have an Account? Login."
   }
 }
