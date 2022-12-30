@@ -1,12 +1,17 @@
 import React from "react";
 import { Button, Form, Input } from "antd";
 import Cookies from "js-cookie";
+import { useRouter } from "next/router";
 
 export default function LoginForm({ formlabels }) {
+  const router = useRouter();
   const onFinish = (values) => {
     Cookies.set("userData", JSON.stringify(values));
     const data = Cookies.get("userData");
     console.log("Success:", JSON.parse(data));
+    if (data) {
+      router.push("/home");
+    }
   };
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);
