@@ -11,7 +11,7 @@ export default function LoginForm({ formlabels }) {
     console.log("Success:", JSON.parse(data));
     if (data) {
       router.push("/home");
-    }
+    } 
   };
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);
