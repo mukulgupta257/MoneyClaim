@@ -19,8 +19,8 @@ export default async function handler(req, res) {
     });
   const data = req.body && JSON.parse(req.body);
   const existUser = await Users.findOne({
-    email: data.username,
-    password: data.password,
+    email: data.username.toLowerCase(),
+    password: data.password.toLowerCase(),
   });
   if (existUser) {
     res.setHeader(

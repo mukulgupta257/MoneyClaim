@@ -20,9 +20,9 @@ export default async function handler(req, res) {
   const data = req.cookies.userData && JSON.parse(req.cookies.userData);
   if (data) {
     let userinfo = {
-      name: data.name,
-      email: data.username,
-      password: data.password,
+      name: data.name.toLowerCase(),
+      email: data.username.toLowerCase(),
+      password: data.password.toLowerCase(),
       isAdmin: false,
       phoneNumber: data.contactnumber,
     };
