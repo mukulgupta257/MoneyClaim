@@ -6,9 +6,12 @@ import { useRouter } from "next/router";
 export default function LoginForm({ formlabels }) {
   const router = useRouter();
   const onFinish = async (values) => {
-    Cookies.set("userData", JSON.stringify(values));
-    const response = await fetch("/api/hello");
-    Cookies.remove("userData");
+    // console.log(values);
+    const response = await fetch("/api/login", {
+      method: "POST",
+      body: JSON.stringify(values),
+    });
+
     console.log("Success:", Cookies.get("UserInfo"));
     if (response.status == 200) {
       router.push("/home");

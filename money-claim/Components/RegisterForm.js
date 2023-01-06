@@ -5,12 +5,18 @@ import MsgModal from "./MsgModal";
 
 export default function RegisterFrom({ formlabels }) {
   const [sucess, setSucess] = useState(false);
+  const [msg, setmsg] = useState("");
+  const showMsg = (open, message) => {
+    setSucess(open);
+    setmsg(message);
+  };
   const onFinish = async (values) => {
+    console.log(values);
     Cookies.set("userData", JSON.stringify(values));
     const response = await fetch("/api/register");
-    const data = Cookies.get("userData");
-    console.log("Success:", await response.json());
-    setSucess(true);
+    const result = await response.json();
+    showMsg(true, result.message);
+    Cookies.remove("userData");
   };
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);
@@ -125,11 +131,7 @@ export default function RegisterFrom({ formlabels }) {
           </Button>
         </Form.Item>
       </Form>
-      <MsgModal
-        open={sucess}
-        setOpen={setSucess}
-        content={"Account Created press ok to Login."}
-      />
+      <MsgModal open={sucess} setOpen={setSucess} content={msg} />
     </>
   );
 }

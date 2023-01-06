@@ -10,7 +10,9 @@ export default function MsgModal({ open, setOpen, content }) {
   };
   const handleOk = () => {
     setOpen(false);
-    router.push("/");
+    if (content == "Account Created Sucessfully Please Login to Continue") {
+      router.push("/");
+    }
   };
   const handleCancel = () => {
     setOpen(false);
