@@ -19,14 +19,18 @@ export default async function handler(req, res) {
     });
   const data = req.cookies.userData && JSON.parse(req.cookies.userData);
   if (data) {
-    const user = new Users({
+    let userinfo = {
       name: data.name,
       email: data.username,
       password: data.password,
-      refferalCode: data.refferalCode ? data.refferalCode : "",
       isAdmin: false,
       phoneNumber: data.contactnumber,
-    });
+    };
+    if (data.refferCode) {
+      userinfo["refferalCode"] = data.refferCode;
+    }
+    console.log("New User Data", userinfo);
+    const user = new Users(userinfo);
 
     const newUser = await user.save();
     res.setHeader(
