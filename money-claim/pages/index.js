@@ -43,7 +43,7 @@ const Home = () => {
           </span>
         </div>
         <div className="ActiveUsers">
-          -- {Data.activeuser[`${data === 0 ? "english" : "hindi"}`]}
+          {Data.activeuser[`${data === 0 ? "english" : "hindi"}`]}
         </div>
       </Layout>
     </main>
