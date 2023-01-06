@@ -26,7 +26,8 @@ export default async function handler(req, res) {
       isAdmin: false,
       phoneNumber: data.contactnumber,
     };
-    if (data.refferCode) {
+
+    if (data.refferCode !== null && data.refferCode !== undefined) {
       userinfo["refferalCode"] = data.refferCode;
     }
     console.log("New User Data", userinfo);
