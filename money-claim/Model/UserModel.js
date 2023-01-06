@@ -4,7 +4,7 @@ const user = new mongoose.Schema({
   name: { type: String, required: true },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
-  refferalCode: { type: String },
+  refferalCode: { type: String, unique: true, required: true },
   isAdmin: { type: String, required: true },
   phoneNumber: { type: Number, required: true },
 });

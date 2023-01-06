@@ -26,9 +26,15 @@ export default async function handler(req, res) {
       isAdmin: false,
       phoneNumber: data.contactnumber,
     };
-
-    if (data.refferCode !== null && data.refferCode !== undefined) {
-      userinfo["refferalCode"] = data.refferCode;
+    var val = Math.floor(1000 + Math.random() * 9000);
+    var val1 = Math.floor(1000 + Math.random() * 9000);
+    const existUser = await Users.findOne({
+      refferalCode: val,
+    });
+    if (existUser) {
+      userinfo["refferalCode"] = val + val1;
+    } else {
+      userinfo["refferalCode"] = val;
     }
     console.log("New User Data", userinfo);
     const user = new Users(userinfo);
