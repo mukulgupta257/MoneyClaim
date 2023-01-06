@@ -40,6 +40,7 @@ const Home = () => {
           </Link>
         </div>
       </Layout>
+      
     </main>
   );
 };
