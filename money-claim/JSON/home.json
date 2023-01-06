@@ -1,0 +1,26 @@
+{
+  "profile": {
+    "english": "My Profile",
+    "hindi": "मेरी प्रोफाइल"
+  },
+  "startplaying": {
+    "english": "Start Playing",
+    "hindi": "खेलना शुरू करें"
+  },
+  "upcoming": {
+    "english": "Upcoming Contest",
+    "hindi": "आगामी प्रतियोगिता"
+  },
+  "winning": {
+    "english": "My Winning",
+    "hindi": "जीत के रिकॉर्ड"
+  },
+  "notice": {
+    "english": "All Entries For Today’s Contest Will start at 10:00am and will be Closed After 11:30AM !",
+    "hindi": "आज की प्रतियोगिता के लिए सभी प्रविष्टियाँ सुबह 10:00 बजे शुरू होंगी और 11:30 बजे के बाद बंद हो जाएँगी!"
+  },
+  "activeuser": {
+    "hindi": "लोग अब तक जुड़े",
+    "english": "Active Users"
+  }
+}

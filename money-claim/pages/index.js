@@ -1,5 +1,6 @@
+import Cookies from "js-cookie";
 import { useRouter } from "next/router";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "../Components/Layout";
 import LoginForm from "../Components/LoginForm";
 import Data from "../JSON/Login.json";
@@ -7,6 +8,12 @@ import Data from "../JSON/Login.json";
 const Home = () => {
   const [data, setData] = useState(0);
   const router = useRouter();
+  useEffect(() => {
+    const user = Cookies.get("UserInfo");
+    if (user) {
+      router.push("/home");
+    }
+  }, [router]);
   const labels = {
     email: Data.loginForm.email[`${data === 0 ? "english" : "hindi"}`],
     password: Data.loginForm.password[`${data === 0 ? "english" : "hindi"}`],

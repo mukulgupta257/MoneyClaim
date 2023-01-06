@@ -5,13 +5,14 @@ import { useRouter } from "next/router";
 
 export default function LoginForm({ formlabels }) {
   const router = useRouter();
-  const onFinish = (values) => {
+  const onFinish = async (values) => {
     Cookies.set("userData", JSON.stringify(values));
-    const data = Cookies.get("userData");
-    console.log("Success:", JSON.parse(data));
-    if (data) {
+    const response = await fetch("/api/hello");
+    Cookies.remove("userData");
+    console.log("Success:", Cookies.get("UserInfo"));
+    if (response.status == 200) {
       router.push("/home");
-    } 
+    }
   };
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);

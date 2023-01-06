@@ -124,3 +124,47 @@ a {
   font: normal normal 16px/16px "Itim";
   flex-direction: row-reverse;
 }
+.ProfileHeader {
+  padding: 0px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #c7c7c7a2;
+}
+.ProfileHeader button {
+  height: 38px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+}
+.ProfileHeader span {
+  font: normal normal 900 28px/28px "Itim";
+}
+.btnContainer {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  min-height: max-content;
+}
+.Clickbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.2px solid #eeeeee;
+  text-align: center;
+  width: 90%;
+  height: 52px;
+  font: normal normal 700 18px/20px "Itim";
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgb(110, 109, 109);
+  cursor: pointer;
+}
+.Clickbtn:active {
+  transform: scale(0.95);
+}
