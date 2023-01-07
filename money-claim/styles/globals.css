@@ -58,6 +58,9 @@ a {
   justify-content: flex-end;
   padding: 10px 10px;
 }
+.LoginBtnContainer span {
+  margin-right: 10px;
+}
 .LanguageButton {
   width: 130px;
   line-height: 20px;
@@ -125,13 +128,20 @@ a {
   flex-direction: row-reverse;
 }
 .ProfileHeader {
+  padding: 5px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.ProfileHeader2 {
   padding: 0px 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid #c7c7c7a2;
 }
-.ProfileHeader button {
+.ProfileHeader2 button {
   height: 38px;
   width: 150px;
   border: none;
@@ -139,7 +149,7 @@ a {
   background: transparent;
   cursor: pointer;
 }
-.ProfileHeader span {
+.ProfileHeader2 span {
   font: normal normal 900 28px/28px "Itim";
 }
 .btnContainer {
